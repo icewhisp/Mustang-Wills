@@ -2,7 +2,7 @@ var contactURLArray = [];
 var contactArray = [];
 var currentContact;
 var posInArray = 0;
-var contact2;
+var namesSearch =[];
 
 
 
@@ -48,6 +48,8 @@ function loadNextContact(URL) {
         console.log(contactRequest.responseText);
         var contact;
         contact = JSON.parse(contactRequest.responseText);
+        console.log(contact.preferredName);
+        namesSearch.push(contact.preferredName);
         console.log("Contact: " + contact.firstName);
         contactArray.push(contact);
 
