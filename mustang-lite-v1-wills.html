@@ -12,7 +12,47 @@
         <script src="mustang-lite-v1-wills.js"></script>
     </head>
     <body>  
-        <h1>Mustang Lite</h1>         
+        <h1>Mustang Lite Verson 2</h1>
+        <table>
+            <tr>
+            <td>Name of Person:</td>
+                <td> 
+                    <input id="nameID" type="text" value="" size="20">
+                </td>
+            </tr>
+            <tr>
+                <td>Email Address:</td>
+                    <td> 
+                        <input id="emailID" type="text" value="" size="20">
+                    </td>
+            </tr>
+            <tr>
+                <td>Current Zip Code:</td>
+                    <td> 
+                        <input id="zipID" type="text" value="" size="20" oninput = "getPlace()">
+                    </td>
+            </tr>
+            <tr>
+                <td>Current City of Residence:</td>
+                    <td> 
+                        <input id="cityID" type="text" value="" size="20">
+                    </td>
+            </tr>
+            <tr>
+                <td>Current Sate of Residence:</td>
+                    <td> 
+                        <input id="stateID" type="text" value="" size="20">
+                    </td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="previous()">Previous</button></td>
+                <td><button type="button" onclick="nextConctact()">Next</button>
+                <td><button type="button" onclick="add()">Add Contact</button>
+                <td><button type="button" onclick="del()">Delete Contact</button></td>
+                <td><button type="button" onclick="update()">Update Contact</button></td>
+            <tr>
+                
+        </table>         
         <button onclick="printIndex()">Print Index</button><br>
         Index:<p id="indexID"></p>
 
