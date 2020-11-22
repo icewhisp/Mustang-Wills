@@ -168,6 +168,7 @@ function checkName(){
         console.log(namesSearch[i].slice(0,sLen));
         if(input == namesSearch[i].slice(0,sLen)){
             console.log("here");
+            console.log(namesSearch[i]);
             found ++;
             foundLoc = i;
 
