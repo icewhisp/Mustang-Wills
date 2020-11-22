@@ -105,12 +105,14 @@ function del()
 {
     console.log("Deleting: " + contactArray[posInArray]);
     contactArray.splice(posInArray,1);
+    namesSearch.splice(posInArray,1);
     displayContact()
 
 }
 function add(){
     var newContact = {"preferredName": document.getElementById("nameID").value, "email":document.getElementById("emailID").value,"city":document.getElementById("cityID").value,"state":document.getElementById("stateID").value,"zip":document.getElementById("zipID").value};
     contactArray.splice(posInArray,0,newContact);
+    namesSearch.splice(posInArray,0,newContact.preferredName);
     document.getElementById("nameID").value = "Added";
     document.getElementById("emailID").value = "Added";   
     document.getElementById("cityID").value = "Added";   
@@ -121,6 +123,7 @@ function add(){
 function updated(){
     var newContact = {"preferredName": document.getElementById("nameID").value, "email":document.getElementById("emailID").value,"city":document.getElementById("cityID").value,"state":document.getElementById("stateID").value,"zip":document.getElementById("zipID").value};
     contactArray.splice(posInArray,1,newContact);
+    namesSearch.splice(posInArray,1,newContact.preferredName);
     document.getElementById("nameID").value = "Updated";
     document.getElementById("emailID").value = "Updated";   
     document.getElementById("cityID").value = "Updated";   
