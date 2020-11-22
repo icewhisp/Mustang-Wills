@@ -143,9 +143,9 @@ function getPlace() {
             var result = xhr.responseText;
             console.log("result:"+result);
             var place = result.split(', ');
-            if (document.getElementById("cityID").value == ""){
+            if (document.getElementById("cityID").value == "" || document.getElementById("cityID").value == " "){
                 document.getElementById("cityID").value = place[0];}
-            if (document.getElementById("stateID").value == ""){
+            if (document.getElementById("stateID").value == ""|| document.getElementById("stateID").value == " "){
                 document.getElementById("stateID").value = place[1];}
         }
     }
