@@ -157,3 +157,21 @@ function getPlace() {
     
     xhr.send(null);
 }
+
+function checkName(){
+    var found = 0;
+    var foundLoc = 0;
+    var input = document.getElementById("inputId").value;
+    var sLen = input.length;
+    for (i=0; i<namesSearch.length; i++) {
+        if(input == namesSearch[i].slice(0,sLen)){
+            found ++;
+            foundLoc = i;
+
+        }
+        
+    }
+    if (found==1){
+        document.getElementById("inputId").value = namesSearch[i];
+    }
+}
