@@ -2,6 +2,7 @@ var contactURLArray = [];
 var contactArray = [];
 var currentContact;
 var posInArray = 0;
+var contact2;
 
 
 
