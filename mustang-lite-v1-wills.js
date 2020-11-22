@@ -143,13 +143,10 @@ function getPlace() {
             var result = xhr.responseText;
             console.log("result:"+result);
             var place = result.split(', ');
-            if (document.getElementById("cityID").value == "")
-                 console.log(place[0]);
-                 console.log(document.getElementById("cityID").value == "");
-                document.getElementById("cityID").value = place[0];
-            if (document.getElementById("stateID").value == "")
-                console.log(place[2]);
-                document.getElementById("stateID").value = place[1];
+            if (document.getElementById("cityID").value == ""){
+                document.getElementById("cityID").value = place[0];}
+            if (document.getElementById("stateID").value == ""){
+                document.getElementById("stateID").value = place[1];}
         }
     }
     
