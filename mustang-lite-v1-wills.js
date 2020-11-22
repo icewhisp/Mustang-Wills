@@ -164,7 +164,10 @@ function checkName(){
     var input = document.getElementById("inputId").value;
     var sLen = input.length;
     for (i=0; i<namesSearch.length; i++) {
+        console.log(namesSearch[i].slice(0,sLen));
+        console.log(document.getElementById("inputId").value);
         if(input == namesSearch[i].slice(0,sLen)){
+            console.log(here);
             found ++;
             foundLoc = i;
 
