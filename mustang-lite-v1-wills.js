@@ -177,7 +177,7 @@ function checkName(){
         
     }
     if (found==1){
-        console.log(contactArray[foundLoc].preferredName);
-        document.getElementById("inputId").value = contactArray[foundLoc].preferredName;
+        console.log(namesSearch[foundLoc]);
+        document.getElementById("inputId").value = namesSearch[foundLoc];
     }
 }
