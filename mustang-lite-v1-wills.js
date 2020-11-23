@@ -176,7 +176,7 @@ function checkName(){
         
     }
     if (found==1){
-        console.log(namesSearch);
+        console.log("Help");
         document.getElementById("inputId").value = JSON.stringify(namesSearch[foundLoc]);
     }
 }
