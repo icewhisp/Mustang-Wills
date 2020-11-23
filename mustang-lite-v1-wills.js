@@ -168,7 +168,6 @@ function checkName(){
     for (i=0; i<namesSearch.length; i++) {
         console.log(namesSearch[i].slice(0,sLen));
         if(input == namesSearch[i].slice(0,sLen)){
-            console.log("here");
             console.log(namesSearch[i]);
             found ++;
             foundLoc = i;
@@ -177,7 +176,7 @@ function checkName(){
         
     }
     if (found==1){
-        console.log(namesSearch[foundLoc]);
-        document.getElementById("inputId").value = namesSearch[foundLoc];
+        console.log(namesSearch);
+        document.getElementById("inputId").value = JSON.stringify(namesSearch[foundLoc]);
     }
 }
