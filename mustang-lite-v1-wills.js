@@ -162,6 +162,7 @@ function checkName(){
     var found = 0;
     var foundLoc = 0;
     var input = document.getElementById("inputId").value;
+    input = input.charAt(0).toUpperCase() + input.slice(1);
     var sLen = input.length;
     console.log(document.getElementById("inputId").value);
     for (i=0; i<namesSearch.length; i++) {
@@ -176,6 +177,6 @@ function checkName(){
         
     }
     if (found==1){
-        document.getElementById("inputId").value = namesSearch[i];
+        document.getElementById("inputId").value = contactArray[foundLoc].preferredName;
     }
 }
