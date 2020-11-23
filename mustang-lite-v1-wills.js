@@ -3,7 +3,7 @@ var contactArray = [];
 var currentContact;
 var posInArray = 0;
 var namesSearch =[];
-
+var foundLoc = 0;
 
 
 function printIndex() {
@@ -160,7 +160,7 @@ function getPlace() {
 
 function checkName(){
     var found = 0;
-    var foundLoc = 0;
+    foundLoc = 0;
     var input = document.getElementById("inputId").value;
     input = input.charAt(0).toUpperCase() + input.slice(1);
     var sLen = input.length;
@@ -178,4 +178,8 @@ function checkName(){
     if (found==1){
         document.getElementById("inputId").value = namesSearch[foundLoc];
     }
+}
+function search(){
+    posInArray = foundLoc;
+    displayContact();
 }
